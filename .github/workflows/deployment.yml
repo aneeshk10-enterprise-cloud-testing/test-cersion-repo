@@ -1,4 +1,5 @@
 name: Workflow_name_test
+run-name: The-WF-NAME
 on: [workflow_dispatch, deployment]
 
 jobs:
