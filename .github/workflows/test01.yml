@@ -1,4 +1,4 @@
-name: Deploy to Lower environments (manual)  
+run-name: 'Deploy to Lower environments (manual) - Parameters: ${{ tojson(inputs) }}'
 
 on: 
   workflow_dispatch:
@@ -15,7 +15,7 @@ on:
         options: 
         - develop 
         - cloudqa
-run-name: 'Deploy to Lower environments (manual) - Parameters: ${{ tojson(inputs) }}'
+
 
 jobs:
   hello_world_job:
