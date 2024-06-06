@@ -1,19 +1,20 @@
 name: Deploy to Lower environments (manual)  
+
 on: 
   workflow_dispatch:
-  inputs:
-    git_tag: 
-      description: 'Git tag for the Docker image' 
-      required: true 
-      default: '' 
-    environment: 
-      description: 'The name of the environment to be deployed'     
-      required: true 
-      default: 'develop' 
-      type: choice 
-      options: 
-      - develop 
-      - cloudqa
+    inputs:
+      git_tag: 
+        description: 'Git tag for the Docker image' 
+        required: true 
+        default: '' 
+      environment: 
+        description: 'The name of the environment to be deployed'     
+        required: true 
+        default: 'develop' 
+        type: choice 
+        options: 
+        - develop 
+        - cloudqa
 
 jobs:
   hello_world_job:
