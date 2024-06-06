@@ -15,7 +15,7 @@ on:
         options: 
         - develop 
         - cloudqa
-
+run-name: ${{ github.event_name == 'workflow_dispatch' && format('CI/CD-{0}-branch-{1}', tojson(inputs), github.ref_name) || '' }}
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
