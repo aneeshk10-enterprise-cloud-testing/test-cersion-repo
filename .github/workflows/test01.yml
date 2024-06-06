@@ -1,5 +1,5 @@
 name: Deploy to Lower environments (manual)  
-run-name: Deploy to Lower environments (manual) - ${{ format(' Environment {0} | Tag {1} ', inputs.environment, inputs.git_tag ) }}
+run-name: Deploy to Lower environments (manual) - ${{ format(' Environment-> {0} | Tag-> {1} ', inputs.environment, inputs.git_tag ) }}
 
 on: 
   workflow_dispatch:
